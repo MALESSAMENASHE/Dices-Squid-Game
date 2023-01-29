@@ -125,7 +125,7 @@ p{
 }
 /* --------set score window------------------- */
 .setScore{
-    background-image: url(/Dice-game/asst/images/BG02.jpg);
+    background-image: url(/asst/images/BG02.jpg);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -139,7 +139,7 @@ p{
     color: white;
     padding: 2rem 2rem;
     gap: 2rem;
-    visibility: hidden;
+    visibility: visible;
   
 }
 
@@ -180,7 +180,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/Dice-game/asst/images/wasted-squid.gif);
+    background-image: url(/asst/images/wasted-squid.gif);
     background-size: contain;
     background-repeat: no-repeat;
     color: white;
@@ -194,7 +194,7 @@ p{
     background-color: rgb(233, 174, 233);
     justify-content: center;
     align-items: center;
-    background-image: url(/Dice-game/asst/images/desnpw2-1d0144a8-8d03-49aa-a676-75a32f537639.gif);
+    background-image: url(/asst/images/desnpw2-1d0144a8-8d03-49aa-a676-75a32f537639.gif);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -205,6 +205,13 @@ p{
     justify-content: center;
     align-items: center;
 } 
+.playAgain01{
+    position: absolute;
+    bottom: 20%;
+    justify-content: center;
+    align-items: center;
+} 
+
 
 
 .newGame{
@@ -282,7 +289,7 @@ p{
     gap:4rem ;
 }
 .setScore{
-    background-image: url(/Dice-game/asst/images/BG02.jpg);
+    background-image: url(/asst/images/BG02.jpg);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -296,7 +303,7 @@ p{
     color: white;
     padding: 2rem 2rem;
     gap: 2rem;
-    visibility: hidden;
+    visibility: visible;
 }
 p{
     font-size: 1.3rem; 

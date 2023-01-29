@@ -24,6 +24,7 @@ const setScore = document.querySelector(".setScore");
 const result02 = document.querySelector(".result02");
 const result01 = document.querySelector(".result01");
 const playAgain= document.querySelector(".playAgain");
+const playAgain01= document.querySelector(".playAgain01");
 
 
 
@@ -32,9 +33,9 @@ rollDice.addEventListener("click" , function(){
     const randomNum01 = Math.floor(Math.random() * 6)+1 ;
     const randomNum02 = Math.floor(Math.random() * 6)+1 ;
  
-    const dice01img ="/Dice-game/asst/images/dice-"+ randomNum01 +".png";
+    const dice01img ="/asst/images/dice-"+ randomNum01 +".png";
     dice01.setAttribute('src',dice01img);
-    const dice02img ="/Dice-game/asst/images/dice-"+ randomNum02 +".png";
+    const dice02img ="/asst/images/dice-"+ randomNum02 +".png";
     dice02.setAttribute('src',dice02img);
     dbSix =randomNum01 + randomNum02;
 
@@ -113,6 +114,11 @@ newGame.addEventListener("click", function(){
 })
 
 playAgain.addEventListener("click", function(){
+    result01.style.visibility = "hidden";
+    result02.style.visibility = "hidden";
+    setScore.style.visibility = "visible";
+})
+playAgain01.addEventListener("click", function(){
     result01.style.visibility = "hidden";
     result02.style.visibility = "hidden";
     setScore.style.visibility = "visible";
