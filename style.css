@@ -1,0 +1,313 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 2rem; 
+}
+#gameContainer{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mainContainer{
+    visibility: visible;
+    width: 80vw;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+ 
+}
+/* ----------player01-------- */
+.containerLeft{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: 	#037a76;
+    align-items: center;
+    gap: 3rem;
+
+}
+.player{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: 	#ffffff;
+    margin: 4rem 0;
+    align-items: center;
+    padding: 1rem;
+}
+.LeftCurrentBox{
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+    margin-bottom: 2rem;
+}
+/* ----------player02-------- */
+.containerRight{
+    width:50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #249f9c;
+    align-items: center;
+    gap: 3rem;
+}
+.rightCurrentBox{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+     align-items: center;
+     margin-bottom: 2rem;
+} 
+/* -------------------- */
+
+.centerBox{
+    position: absolute;
+    width: 80% ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+
+}
+.dices{
+      /* width: 80% ; */
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn{
+    width: 18%;
+    height: 6%;
+    background-color:	#f44786 ;
+    border: 1px solid black;
+    border-radius: 10%;
+    margin: 2rem;
+    font-size: 1rem;
+}
+/* .buttons{
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+} */
+/* .rollDice{ 
+    width: 40%;
+    height: 30%;
+}
+.hold{ 
+    width: 40%;
+    height: 30%;
+} */
+
+
+.dice{
+    height: 15%;
+    margin: 2rem;
+
+}
+/* --------set score window------------------- */
+.setScore{
+    background-image: url(/Dice-game/asst/images/BG02.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    list-style-type: disc;
+    line-height: 3rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: white;
+    padding: 2rem 2rem;
+    gap: 2rem;
+    visibility: hidden;
+  
+}
+
+
+.result02{
+    background-color: black;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+
+.result01{
+    background-color: black;
+    visibility: hidden;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: row;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0; 
+}
+/* .targetScore{}
+.startGame{} */
+.lost{
+
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Dice-game/asst/images/wasted-squid.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+.won{  
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(233, 174, 233);
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Dice-game/asst/images/desnpw2-1d0144a8-8d03-49aa-a676-75a32f537639.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.playAgain{
+    position: absolute;
+    bottom: 20%;
+    justify-content: center;
+    align-items: center;
+} 
+
+
+.newGame{
+    background-color: #ed1b76;
+}
+.logoR{
+    position: absolute;
+    right: 0;
+    width: 10vw;
+    height: 50%;
+    justify-content: center;
+ 
+
+}
+.logoL{
+    position: absolute;
+   left: 0;
+    width: 10vw;
+    height: 50%;
+    justify-content: center;
+
+}
+
+
+@media (max-width: 600px) {
+    #mainContainer{
+        width: 100%;
+        height: 100%;
+     
+     
+    }
+    .logoR{
+
+        visibility: hidden;
+   
+     
+    
+    }
+    .logoL{
+        visibility: hidden;
+        position: absolute;
+       left: 0;
+        width: 10vw;
+        height: 50%;
+        justify-content: center;
+    
+    }
+    
+.centerBox{
+    position: absolute;
+    width: 100% ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.dices{
+    /* width: 80% ; */
+  height: 60%;
+  display: flex;
+  flex-direction: row;
+}
+.lost{
+    width: 50%;
+}
+.won{  
+    width: 50%;
+}
+.centerBox{
+    width: 100% ;
+}
+.container{
+    gap:4rem ;
+}
+.setScore{
+    background-image: url(/Dice-game/asst/images/BG02.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    list-style-type: disc;
+    line-height: 2.3rem;
+    top: 0;
+    left: 0;
+    position: absolute;
+    color: white;
+    padding: 2rem 2rem;
+    gap: 2rem;
+    visibility: hidden;
+}
+p{
+    font-size: 1.3rem; 
+}
+.startGame{
+    width: 40%;
+    height: 50%;
+    line-height: 2.5rem;
+}
+.targetScore{
+    line-height: 2.5rem;
+
+}
+}

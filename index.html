@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Dice-game/style.css">
+    <title>Dice Game</title>
+</head>
+<body>
+    <div id="gameContainer">
+
+        <img class ="logoR" src="/Dice-game/asst/images/squidlogo.gif" alt="sg">
+        <img class ="logoL" src="/Dice-game/asst/images/squidlogo.gif" alt="sg">
+
+    <div id="mainContainer">
+
+        <div class="containerLeft container">
+            <img class="player02Img" src="/Dice-game/asst/images/001.jpg" alt="001" width="60%" >
+            <div class="player01 player">
+                <p>Player1</p>
+                <p class="player01score  playerscore score"> 0</p>
+            </div>
+            <div class="LeftCurrentBox">
+                <P>CURRENT</P>
+                <p class="player01CurrentScore score">0</p>
+            </div>
+        </div>
+
+        <div class="containerRight container">
+            <img class="player02Img" src="/Dice-game/asst/images/456.jpg" alt="001" width="60%">
+            <div class="player02 player">
+                <p>Player 2</p>
+                <p class="player02score playerscore score">
+                    0</p>
+            </div>
+            <div class="rightCurrentBox">
+                <P>CURRENT</P>
+                <p class="player02CurrentScore score">0</p>
+            </div>
+        </div>
+
+        
+
+        <div class="centerBox">
+            <button  class="newGame btn">NEW GAME</button>
+            <div class="dices">
+                <img class="dice01 dice" src="/Dice-game/asst/images/dice-3.png" alt="dice">
+                <img class="dice02 dice" src="/Dice-game/asst/images/dice-3.png" alt="dice">
+             </div>
+             <!-- <div class="buttons"> -->
+                <button  class="rollDice btn"> ROLL DICE</button>
+                <button  class="hold btn">HOLD</button>
+            <!-- </div> -->
+        </div>
+    </div>
+
+        <div class="setScore">
+            <h1>WELCOME TO SQUID GAME</h1>
+            <h2>Game instructions:</h2>
+            <ul>
+                <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, iste.</p></li>
+                <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, iste.</p></li>
+                <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, iste.</p></li>
+                <li><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis, iste.</p></li>
+            </ul>
+            <p>Please Enter a target score</p>
+            <div class="input">
+            <input type="number" class="targetScore">
+            <button type="submit" class="startGame btn">START GAME</button>
+            </div>  
+        </div>
+
+        <div class="result02">
+            <button type="submit" class="playAgain btn">Play again</button>
+            <div class="youLost01 lost"><h1>You lost!!!</h1>
+            </div>
+            <div class="youWon02 won">
+            <h1>You won</h1>
+            </div>
+        </div>
+
+        <div class="result01">
+            <button type="submit" class="playAgain btn">Play again</button>
+            <div class="youWon01 won">
+            <h1>You won</h1>
+            </div>
+            <div class="youLost02 lost">
+                <h1>You lost!!!</h1>
+            </div>
+        </div>
+
+    </div>
+    <script src="/Dice-game/index.js"></script>
+</body>
+</html>
