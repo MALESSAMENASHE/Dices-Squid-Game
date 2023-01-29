@@ -5,7 +5,7 @@ let total02Score = 0 ;
 let zero = 0 ;
 let dbSix =0 ;
 let player01torn = true ;
-// let targetScore=
+
 
 const player01 = document.querySelector(".player01");
 const player02 = document.querySelector(".player02");
@@ -25,6 +25,8 @@ const result02 = document.querySelector(".result02");
 const result01 = document.querySelector(".result01");
 const playAgain= document.querySelector(".playAgain");
 const playAgain01= document.querySelector(".playAgain01");
+const audio =document.querySelector(".audio")
+const dicesEffect=document.querySelector(".dicesEffect")
 
 
 
@@ -60,6 +62,7 @@ rollDice.addEventListener("click" , function(){
 
         }
     }
+    dicesEffect.play();
 });
 
 hold.addEventListener("click", function(){
@@ -84,6 +87,7 @@ hold.addEventListener("click", function(){
         result02.style.visibility = "visible";
 }
 
+
 })
 
 startGame.addEventListener("click", function(){
@@ -97,6 +101,7 @@ startGame.addEventListener("click", function(){
     player01score.textContent = zero ;
     player02score.textContent = zero;
     player01torn = true ;
+    audio.play();
  })
 
 newGame.addEventListener("click", function(){
@@ -110,6 +115,8 @@ newGame.addEventListener("click", function(){
     player02score.textContent = zero;
     player01torn = true ;
     setScore.style.visibility="visible";
+    audio.play();
+   
 
 })
 
@@ -117,11 +124,13 @@ playAgain.addEventListener("click", function(){
     result01.style.visibility = "hidden";
     result02.style.visibility = "hidden";
     setScore.style.visibility = "visible";
+    audio.play();
 })
 playAgain01.addEventListener("click", function(){
     result01.style.visibility = "hidden";
     result02.style.visibility = "hidden";
     setScore.style.visibility = "visible";
+    audio.play();
 })
 
 

@@ -22,9 +22,6 @@ p{
     margin: auto;
     display: flex;
     flex-direction: row;
-    /* justify-content: center;
-    align-items: center; */
- 
 }
 /* ----------player01-------- */
 .containerLeft{
@@ -66,9 +63,8 @@ p{
 .rightCurrentBox{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-     align-items: center;
-     margin-bottom: 2rem;
+    align-items: center;
+    margin-bottom: 2rem;
 } 
 /* -------------------- */
 
@@ -234,6 +230,7 @@ p{
     justify-content: center;
 
 }
+
 
 
 @media (max-width: 600px) {
